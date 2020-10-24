@@ -1,0 +1,25 @@
+@import "../../styles/config";
+
+.info-real {
+  font-weight: lighter;
+}
+.single {
+  font-weight: lighter;
+}
+
+.object-info-value {
+  margin-right: 3px;
+}
+
+.multiple-block {
+  background-color: hsl(0, 0%, 100%);
+  display: inline-block;
+  margin-right: 4px;
+  padding: 5px;
+  border-radius: 3px;
+}
+
+.multiple-block-dark {
+  background-color: $dark_mode_elements;
+  color: $dark_mode_txt;
+}

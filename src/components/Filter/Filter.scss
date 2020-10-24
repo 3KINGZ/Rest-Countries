@@ -1,0 +1,28 @@
+.filter-container {
+  width: 100%;
+  position: relative;
+  .filter {
+    position: absolute;
+    right: 0;
+    width: 35%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  .filter-dark {
+    background-color: hsl(200, 15%, 8%);
+    color: hsl(0, 0%, 100%);
+  }
+  .filter-light {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 52%);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .filter {
+    width: 57;
+  }
+}

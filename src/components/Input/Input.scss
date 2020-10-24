@@ -1,0 +1,20 @@
+.input-text-container {
+  width: 100%;
+  .search-input {
+    width: 70%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  .search-input-dark {
+    background-color: hsl(200, 15%, 8%);
+    color: hsl(0, 0%, 100%);
+  }
+  .search-input-light {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 52%);
+  }
+}

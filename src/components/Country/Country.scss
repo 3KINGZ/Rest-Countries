@@ -1,0 +1,40 @@
+@import "../../styles/config";
+
+.country {
+  width: 250px;
+  border-radius: 8px;
+  border-bottom: 1.2px solid hsl(0, 2%, 72%);
+  &:hover {
+    border-bottom: 1.5px solid hsl(0, 2%, 72%);
+  }
+  .flag {
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  .info {
+    padding: 15px;
+    .main-info {
+      margin-top: 15px;
+      div {
+        margin-bottom: 7px;
+      }
+    }
+  }
+}
+
+.country-dark {
+  background-color: $dark_mode_elements;
+  color: hsl(0, 0%, 100%);
+  border-bottom: 1.2px solid $dark_mode_elements;
+}
+
+.country-light {
+  background-color: white;
+}
+
+@media screen and (max-width: 700px) {
+  .country {
+    width: 100%;
+  }
+}
