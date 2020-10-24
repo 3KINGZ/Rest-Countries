@@ -24,6 +24,12 @@
     margin-top: 15px;
     display: grid;
     grid-template-columns: auto auto;
+    .info1 {
+      width: 600px;
+      img {
+        width: 100%;
+      }
+    }
     .info2 {
       margin-top: 40px;
     }
@@ -43,13 +49,16 @@
 }
 
 @media screen and (max-width: 700px) {
-  .flag-detail {
-    width: 100%;
-  }
   .country-detail {
     width: 100%;
     .main-country-detail {
       display: block;
+      .info1 {
+        width: 100%;
+        img {
+          width: 100%;
+        }
+      }
       .info2 {
         margin-top: 25px;
       }

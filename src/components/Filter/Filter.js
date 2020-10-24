@@ -11,6 +11,9 @@ function Filter({ filterVal, onFilterChange }) {
         onChange={(e) => onFilterChange(e.target.value)}
         className={`filter ${mode ? "filter-dark" : "filter-light"}`}
       >
+        <option value="" disabled selected>
+          Filter by Region
+        </option>
         <option value="africa">Africa</option>
         <option value="america">America</option>
         <option value="asia">Asia</option>
