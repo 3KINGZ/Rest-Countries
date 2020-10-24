@@ -2,11 +2,15 @@ import React, { useContext } from "react";
 import { ModeContext } from "../../App";
 import "./Filter.scss";
 
-function Filter() {
+function Filter({ filterVal, onFilterChange }) {
   const mode = useContext(ModeContext);
   return (
     <div className="filter-container">
-      <select className={`filter ${mode ? "filter-dark" : "filter-light"}`}>
+      <select
+        value={filterVal}
+        onChange={(e) => onFilterChange(e.target.value)}
+        className={`filter ${mode ? "filter-dark" : "filter-light"}`}
+      >
         <option value="africa">Africa</option>
         <option value="america">America</option>
         <option value="asia">Asia</option>

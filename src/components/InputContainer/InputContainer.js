@@ -3,11 +3,16 @@ import Input from "../Input/Input";
 import Filter from "../Filter/Filter";
 import "./InputContainer.scss";
 
-function InputContainer() {
+function InputContainer({
+  inputVal,
+  onInputChange,
+  filterVal,
+  onFilterChange,
+}) {
   return (
     <div className="input-container">
-      <Input />
-      <Filter />
+      <Input inputVal={inputVal} onInputChange={onInputChange} />
+      <Filter filterVal={filterVal} onFilterChange={onFilterChange} />
     </div>
   );
 }

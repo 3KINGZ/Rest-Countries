@@ -1,3 +1,5 @@
+@import "../../styles/config";
+
 .input-text-container {
   width: 100%;
   .search-input {
@@ -10,7 +12,7 @@
     box-sizing: border-box;
   }
   .search-input-dark {
-    background-color: hsl(200, 15%, 8%);
+    background-color: $dark_mode_elements;
     color: hsl(0, 0%, 100%);
   }
   .search-input-light {
