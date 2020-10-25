@@ -110,34 +110,6 @@ function CountryDetail({ match }) {
           </div>
         </>
       )}
-
-      {/* <div className="main-country-detail">
-        <div>
-          <img src={flag} alt={`${name} flag`} className="flag-detail" />
-        </div>
-        <div className="info2">
-          <h2>{country.name}</h2>
-          <div className="country-detail-info">
-            <div className="infoo">
-              <Info name="Native Name" value={nativeName} />
-              <Info name="Population" value={population} />
-              <Info name="Region" value={region} />
-              <Info name="Sub Region" value={subregion} />
-              <Info name="Capital" value={capital} />
-            </div>
-            <div className="infoo infoo2">
-              <Info
-                name="Top Level Domain"
-                value={topLevelDomain}
-                type="multiple"
-              />
-              <Info name="Currencies" value={currencies} type="object" />
-              <Info name="Languages" value={languages} type="object" />
-            </div>
-          </div>
-          <Info name="Border Countries" value={borders} type="multiple-block" />
-        </div>
-      </div> */}
     </div>
   );
 }
