@@ -19,7 +19,7 @@ function HomePage() {
         setLoading(false);
       })
       .catch((e) => {
-        setError("an error occurred");
+        setError("An error occurred while fetching data");
         setLoading(false);
       });
   }, []);

@@ -12,7 +12,7 @@ function Country({ country }) {
   return (
     <Link to={`/country/${name}`}>
       <div className={`country ${mode ? "country-dark" : "country-light"}`}>
-        <img src={flag} className="flag" alt="country" />
+        <img src={flag} className="flag" alt={`${name} flag`} />
         <div className="info">
           <h3>{name}</h3>
           <div className="main-info">
