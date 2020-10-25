@@ -4,6 +4,7 @@ import "./Filter.scss";
 
 function Filter({ filterVal, onFilterChange }) {
   const mode = useContext(ModeContext);
+
   return (
     <div className="filter-container">
       <select
@@ -11,7 +12,7 @@ function Filter({ filterVal, onFilterChange }) {
         onChange={(e) => onFilterChange(e.target.value)}
         className={`filter ${mode ? "filter-dark" : "filter-light"}`}
       >
-        <option value="" disabled selected>
+        <option value="" disabled defaultChecked>
           Filter by Region
         </option>
         <option value="africa">Africa</option>

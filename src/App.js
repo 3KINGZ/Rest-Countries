@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Header from "./components/Header/Header";
 import HomePage from "./routes/HomePage/HomePage";
@@ -8,7 +8,13 @@ import "./App.scss";
 export const ModeContext = React.createContext();
 
 function App() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(
+    JSON.parse(localStorage.getItem("mode")) || false
+  );
+
+  useEffect(() => {
+    localStorage.setItem("mode", JSON.stringify(darkMode));
+  });
 
   return (
     <Router>
