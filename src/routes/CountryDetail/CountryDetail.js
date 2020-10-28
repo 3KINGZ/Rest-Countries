@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import { getCountry } from "../../services/services";
 import backButton from "../../assets/icons/left-arrow.svg";
 import Info from "../../components/Info/Info";
-import { ModeContext } from "../../App";
 import loadingGif from "../../assets/icons/loading.gif";
+import { ModeContext } from "../../App";
 import "./CountryDetail.scss";
 
 function CountryDetail({ match }) {
@@ -27,7 +27,7 @@ function CountryDetail({ match }) {
           setLoading(false);
         })
         .catch((e) => {
-          setError("An error occurred while fetching country details");
+          setError("...Oops an error occurred while fetching country details");
           setLoading(false);
         });
     },
@@ -35,7 +35,7 @@ function CountryDetail({ match }) {
     []
   );
 
-  let {
+  const {
     flag,
     name,
     nativeName,
@@ -48,8 +48,6 @@ function CountryDetail({ match }) {
     languages,
     borders,
   } = country;
-
-  console.log(country);
 
   return (
     <div className="country-detail">
