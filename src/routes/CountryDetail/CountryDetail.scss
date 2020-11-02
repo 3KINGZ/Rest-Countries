@@ -25,8 +25,8 @@
 
   .main-country-detail {
     margin-top: 15px;
-    display: grid;
-    grid-template-columns: auto auto;
+    display: flex;
+    justify-content: space-between;
     .info1 {
       width: 600px;
       img {
@@ -51,7 +51,16 @@
   }
 }
 
-@media screen and (max-width: 700px) {
+@media only screen and (device-width: 1024px) {
+  .main-country-detail {
+    display: flex;
+    div {
+      margin-right: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
   .country-detail {
     width: 100%;
     .main-country-detail {
