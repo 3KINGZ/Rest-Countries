@@ -18,6 +18,9 @@
     background-color: $dark_mode_elements;
     border-color: $dark_mode_elements;
     color: $dark_mode_txt;
+    img {
+      filter: invert(100%);
+    }
   }
 
   .main-country-detail {
