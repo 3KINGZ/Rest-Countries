@@ -13,9 +13,6 @@ body {
 .light-mode {
   color: $light_mode_txt;
   background-color: $light_mode;
-  // transition-duration: 0.5s;
-  // transition-property: background-color 0.5s ease-ou;
-
   -webkit-transition: background-color 500ms;
   -moz-transition: background-color 500ms;
   -o-transition: background-color 500ms;
@@ -25,9 +22,6 @@ body {
 .dark-mode {
   color: $dark_mode_txt;
   background-color: $dark_mode;
-  // transition-duration: 0.5s;
-  // transition-property: background;
-
   -webkit-transition: background-color 500ms;
   -moz-transition: background-color 500ms;
   -o-transition: background-color 500ms;
