@@ -13,11 +13,15 @@ body {
 .light-mode {
   color: $light_mode_txt;
   background-color: $light_mode;
+  transition-duration: 0.5s;
+  transition-property: background;
 }
 
 .dark-mode {
   color: $dark_mode_txt;
   background-color: $dark_mode;
+  transition-duration: 0.5s;
+  transition-property: background;
 }
 
 a {

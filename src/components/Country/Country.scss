@@ -4,6 +4,8 @@
   width: 250px;
   border-radius: 8px;
   border-bottom: 1.2px solid hsl(0, 2%, 72%);
+  transition-duration: 0.3s;
+  transition-property: background;
   &:hover {
     border-bottom: 1.5px solid hsl(0, 2%, 72%);
   }
