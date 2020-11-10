@@ -14,7 +14,7 @@ body {
   color: $light_mode_txt;
   background-color: $light_mode;
   transition-duration: 0.5s;
-  transition-property: background;
+  transition-property: background-color;
 }
 
 .dark-mode {
