@@ -4,8 +4,11 @@
   width: 250px;
   border-radius: 8px;
   border-bottom: 1.2px solid hsl(0, 2%, 72%);
-  transition-duration: 0.3s;
-  transition-property: background-color;
+  -webkit-transition: background-color 500ms linear 1s;
+  -moz-transition: background-color 500ms linear 1s;
+  -o-transition: background-color 500ms linear 1s;
+  transition: background-color 500ms linear 1s;
+
   &:hover {
     border-bottom: 1.5px solid hsl(0, 2%, 72%);
   }
@@ -29,10 +32,19 @@
   background-color: $dark_mode_elements;
   color: hsl(0, 0%, 100%);
   border-bottom: 1.2px solid $dark_mode_elements;
+  -webkit-transition: background-color 500ms;
+  -moz-transition: background-color 500ms;
+  -o-transition: background-color 500ms;
+  transition: background-color 500ms;
 }
 
 .country-light {
   background-color: white;
+
+  -webkit-transition: background-color 500ms;
+  -moz-transition: background-color 500ms;
+  -o-transition: background-color 500ms;
+  transition: background-color 500ms;
 }
 
 @media screen and (max-width: 700px) {
